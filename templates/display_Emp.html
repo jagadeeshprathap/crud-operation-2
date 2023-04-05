@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: rgb(67, 23, 223);">display the employement table</h1>
+        <table style="background-color: grey;" border="5px">
+            <tr style="background-color: aquamarine;">
+                <th style="background-color: aquamarine;">d_name</th>
+                <th>e_name</th>
+                <th>e_no</th>
+            </tr>
+            {% for i in emp %}
+            <tr style="background-color: coral;">
+                <td>{{i.d_name}}</td>
+                <td>{{i.e_name}}</td>
+                <td>{{i.e_no}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

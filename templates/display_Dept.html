@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table style="color: gold;", border="5px">
+            <h1>display the dept table</h1>
+            <tr>
+                <th style="color: lime;">d_name</th>
+            </tr>
+        {% for i in dept %}
+            <tr>
+                 <td>{{i.d_name}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
